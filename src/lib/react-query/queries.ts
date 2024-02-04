@@ -28,9 +28,7 @@ import {
 } from "@/lib/appwrite/api";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 
-// ============================================================
 // AUTH QUERIES
-// ============================================================
 
 export const useCreateUserAccount = () => {
   return useMutation({
@@ -51,9 +49,7 @@ export const useSignOutAccount = () => {
   });
 };
 
-// ============================================================
 // POST QUERIES
-// ============================================================
 
 export const useGetPosts = () => {
   return useInfiniteQuery({
@@ -204,9 +200,7 @@ export const useDeleteSavedPost = () => {
   });
 };
 
-// ============================================================
 // USER QUERIES
-// ============================================================
 
 export const useGetCurrentUser = () => {
   return useQuery({
